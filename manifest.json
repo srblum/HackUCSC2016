@@ -1,0 +1,33 @@
+{
+"manifest_version":2,
+"name":"Hack UCSC 2016",
+"description":"Forces the invisible hand in an ethical direction",
+"version":"1.0",
+"permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+"browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "addButton.html"
+  },
+"content_scripts" : [{
+		"matches" : ["http://www.amazon.com/*",
+					"http://www.amazon.com/*/*",
+					"https://www.amazon.com/*",
+					"https://www.amazon.com/*/*"],
+		"js" : ["jquery-1.12.0.min.js",
+				"jquery.colorbox-min.js",
+				"jquery.colorbox.js",
+				"d3.v3.min.js",
+				"contentScript.js"]
+	}],
+"web_accessible_resources":["icon.png",
+							"cat.png",
+							"colorbox.css",
+							"images/controls.png",
+							"images/border.png",
+							"images/loading_background.png",
+							"images/loading.gif",
+							"images/overlay.png"]
+}
