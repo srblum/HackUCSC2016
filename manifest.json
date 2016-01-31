@@ -7,36 +7,25 @@
     "activeTab",
     "https://ajax.googleapis.com/"
   ],
+"background":{
+	"scripts":["js/background.js"]
+},
 "browser_action": {
-    "default_icon": "images/slavery_icon.png",
-    "default_popup": "addButton.html"
+    "default_icon": "images/logo.png",
+    "default_popup": "popup.html"
   },
 "content_scripts" : [{
 		"matches" : ["http://www.amazon.com/*",
 					"http://www.amazon.com/*/*",
 					"https://www.amazon.com/*",
 					"https://www.amazon.com/*/*"],
-		"js" : ["jquery-1.12.0.min.js",
-				"jquery.colorbox-min.js",
-				"jquery.colorbox.js",
-				"d3.v3.min.js",
-				"contentScript.js"]
+		"js" : [
+				"js/jquery-1.12.0.min.js",
+				"js/jquery.colorbox-min.js",
+				"js/jquery.colorbox.js",
+				"js/d3.v3.min.js",
+				"js/contentScript.js"]
 	}],
-"web_accessible_resources":[//Reveal Images
-							"images/slavery_icon.png",
-							"images/a.png",
-							"images/b.png",
-							"images/c.png",
-							"images/d.png",
-							"images/f.png",
-							"images/question.png",
-							//Color box images
-							"images/controls.png",
-							"images/border.png",
-							"images/loading_background.png",
-							"images/loading.gif",
-							"images/overlay.png",
-							//CSS
-							"myScript.css",
-							"colorbox.css"]
+"web_accessible_resources":["images/*",
+							"*.css"]
 }
