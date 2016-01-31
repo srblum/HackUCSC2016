@@ -259,8 +259,9 @@ $(document).ready(function(){
                 div2c.appendChild(dislikeImg);
 
                 var involvedA=document.createElement('a');
-                involvedA.href='http://www.laborrights.org/'
-                $(getInvolvedImg).wrap(involvedA)
+                involvedA.href='http://www.laborrights.org/';
+                involvedA.target="_blank";
+                $(getInvolvedImg).wrap(involvedA);
 
                 //Create ps
                 var shareP=document.createElement('p');
