@@ -8,7 +8,7 @@
     "https://ajax.googleapis.com/"
   ],
 "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "images/slavery_icon.png",
     "default_popup": "addButton.html"
   },
 "content_scripts" : [{
@@ -22,12 +22,21 @@
 				"d3.v3.min.js",
 				"contentScript.js"]
 	}],
-"web_accessible_resources":["icon.png",
-							"cat.png",
-							"colorbox.css",
+"web_accessible_resources":[//Reveal Images
+							"images/slavery_icon.png",
+							"images/a.png",
+							"images/b.png",
+							"images/c.png",
+							"images/d.png",
+							"images/f.png",
+							"images/question.png",
+							//Color box images
 							"images/controls.png",
 							"images/border.png",
 							"images/loading_background.png",
 							"images/loading.gif",
-							"images/overlay.png"]
+							"images/overlay.png",
+							//CSS
+							"myScript.css",
+							"colorbox.css"]
 }
